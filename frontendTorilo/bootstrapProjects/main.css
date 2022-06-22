@@ -1,0 +1,9 @@
+.navList{
+    margin: auto!important;
+}
+.navList li a{
+    margin-left: 10px;
+    font-size: 18px;
+    font-family: cursive;
+    color:brown
+}

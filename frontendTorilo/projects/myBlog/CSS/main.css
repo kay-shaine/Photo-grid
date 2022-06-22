@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: rgb(138, 98, 74);
+}
+nav img{
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+}
+main h1{
+    text-align: center;
+    color: rgb(138, 98, 74);
+    font-size: 4rem;
+    font-family:cursive;
+}
+#row{
+    border-bottom: 2px solid brown;
+    width: 70%;
+    margin: auto;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.leftImage{
+    border: 2px solid rgb(222, 174, 135);
+    border-radius: 25px;
+    border-left: 0;
+    border-right: 0;
+    width: 200px;
+    height: 35vh;
+} 
+#perfume{
+    font-size: 15px;
+}
+#earrings{
+    font-size: 15px;
+}
+.leftImage img{
+    width: 100%;
+    height:30vh;
+    border-radius: 20px;
+}
+#top{
+    font-size: 15px; 
+}
+.leftImage img:hover{
+    transform: scale(1.5);
+}
+.rightContent{
+    width: 30%
+}
+#watch{
+    font-size: 15px;
+}
+.rightContent p{
+    text-align: left;
+    text-transform: capitalize;
+    color: brown;
+    font-family: cursive;
+}
+.button{
+    background-color: brown;
+    padding: 13px;
+    width: 30%;
+    border: none;
+    margin: 30px 100px;
+    border-radius: 10px;
+    color: burlywood;
+    font-size: 10px;
+}
+.button:hover{
+    cursor: pointer;
+    background-color: darksalmon;
+    transform: scale(1.5);
+}
