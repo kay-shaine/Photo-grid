@@ -54,18 +54,48 @@ main {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding-left: 100px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 0.8 ease;
+   
 }
+
+/* img:hover{
+	transform: scalex(-1);
+} */
+
+/* THE CARD HOLDS THE FRONT AND BACK FACES */
+.thecard{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 70px;
+    height: 100%;
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+    
+  }
+  /* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
+.thecard:hover{
+    transform: rotateY(180deg);
+  }
 
 .one {
     border: 2px rgb(139, 46, 139);
     padding: 10px;
     height: 70px;
     width: 70px;
+    position: absolute;
+    backface-visibility : hidden;
+    overflow: hidden;
+    
 }
 
 .one img {
     width: 70px;
-    height: 70px
+    height: 70px;
+    
 }
 
 .two {
@@ -73,11 +103,17 @@ main {
     padding: 10px;
     height: 70px;
     width: 70px;
+    position: relative;
+    backface-visibility : hidden;
+    overflow: hidden;
+    transform: rotateY(180deg);
 }
 
 .two img {
+    position: absolute;
     height: 70px;
-    width: 70px;
+   
+    
 }
 
 .three {
